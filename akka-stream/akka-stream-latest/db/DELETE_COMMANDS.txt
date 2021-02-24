@@ -1,0 +1,1 @@
+db.FAILED_EVENT.deleteOne({"asup_id":"2018022620130118","service_name":"SES"})

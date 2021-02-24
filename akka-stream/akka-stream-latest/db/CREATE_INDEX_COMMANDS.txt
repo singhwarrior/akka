@@ -1,0 +1,26 @@
+/*
+ * To USE arms_db	
+ */
+use arms_db
+
+/*
+ * Creating UNIQUE Index for FAILED_EVENT collection	
+ */
+db.FAILED_EVENT.createIndex( { asup_id : 1, service_name: 1 }, { unique: true } )
+{
+	"createdCollectionAutomatically" : true,
+	"numIndexesBefore" : 1,
+	"numIndexesAfter" : 2,
+	"ok" : 1
+}
+
+/*
+ * Creating TTL for FAILED_EVENT collection	
+ */
+db.FAILED_EVENT.createIndex( { "createdAt": 1 }, { expireAfterSeconds: 5184000 } )
+{
+	"createdCollectionAutomatically" : false,
+	"numIndexesBefore" : 2,
+	"numIndexesAfter" : 3,
+	"ok" : 1
+}

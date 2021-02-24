@@ -1,0 +1,1 @@
+java -cp /Users/singg/git/all/akka/actor/akka-actor-overall/target/akka-actor-overall-0.0.1-SNAPSHOT-allinone.jar -Dconfig.file="/Users/singg/git/all/akka/actor/akka-actor-overall/conf/tst/cnn.conf" com.karma.akka.actor.overall.Launcher1
